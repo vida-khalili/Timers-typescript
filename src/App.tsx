@@ -1,23 +1,13 @@
-import { useRef } from "react";
-import Button from "./components/Button/Button";
-import Input from "./components/Input/Input";
-import Form, { type FormHandle } from "./components/Form/Form";
-
+import AddTimer from "./components/AddTimer";
+import Header from "./components/Header";
+import Container from "./components/UI/Container/Container";
+import "./styles/app.css";
 function App() {
-  const customForm = useRef<FormHandle>(null);
-  const handleSave = (data: unknown) => {
-    const extractedData = data as { name: string; age: string };
-    console.log(extractedData);
-    customForm.current?.clear();
-  };
   return (
-    <>
-      <Form onSave={handleSave} ref={customForm}>
-        <Input id="name" label="name" type="name" />
-        <Input id="age" label="age" type="number" />
-        <Button>Save</Button>
-      </Form>
-    </>
+    <Container className="app w-75 p-3 bg-teal-800 mx-auto rounded">
+      <Header />
+      <AddTimer />
+    </Container>
   );
 }
 

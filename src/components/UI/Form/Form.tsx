@@ -31,7 +31,12 @@ const Form = forwardRef<FormHandle, FormProps>(
     };
 
     return (
-      <form onSubmit={handleSubmit} {...otherProps} ref={form}>
+      <form
+        onSubmit={handleSubmit}
+        {...otherProps}
+        ref={form}
+        className="mw-75"
+      >
         {children}
       </form>
     );

@@ -7,9 +7,17 @@ type InputProps = {
 const Input = forwardRef<HTMLInputElement, InputProps>(
   ({ id, label, ...props }, ref) => {
     return (
-      <div>
-        <label htmlFor={id}>{label}</label>
-        <input id={id} {...props} ref={ref} name={id}></input>
+      <div className="mb-3">
+        <label htmlFor={id} className="form-label">
+          {label}
+        </label>
+        <input
+          id={id}
+          {...props}
+          ref={ref}
+          name={id}
+          className="form-control"
+        ></input>
       </div>
     );
   }
