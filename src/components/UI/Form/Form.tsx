@@ -18,7 +18,6 @@ const Form = forwardRef<FormHandle, FormProps>(
     useImperativeHandle(ref, () => {
       return {
         clear() {
-          console.log("Clearing");
           form.current?.reset();
         },
       };
@@ -35,7 +34,7 @@ const Form = forwardRef<FormHandle, FormProps>(
         onSubmit={handleSubmit}
         {...otherProps}
         ref={form}
-        className="w-25 mx-auto"
+        className="w-50 mx-auto "
       >
         {children}
       </form>

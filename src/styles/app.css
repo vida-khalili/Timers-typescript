@@ -8,7 +8,9 @@
   background: linear-gradient(#8b9290, #c1d4d2);
   padding: 32px;
 }
-
+.timer {
+  width: 200px;
+}
 .bg-green-200 {
   background-color: var(--green-200);
 }

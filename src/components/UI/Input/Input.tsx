@@ -8,7 +8,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
   ({ id, label, ...props }, ref) => {
     return (
       <div className="mb-3">
-        <label htmlFor={id} className="form-label text-white">
+        <label htmlFor={id} className="form-label text-white text-capitalize">
           {label}
         </label>
         <input

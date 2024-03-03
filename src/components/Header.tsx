@@ -5,13 +5,13 @@ const Header = () => {
   const timerCtx = useTimerContext();
 
   return (
-    <header className="d-flex w-100 justify-content-around align-items-center text-white ">
-      <h1>React Timers</h1>
+    <header className="d-flex w-100 justify-content-around align-items-center  ">
+      <h1 className="text-bold">React Timers</h1>
       <Button
-        className="btn btn-green text-capitalize"
+        className="btn btn-green text-capitalize text-white"
         onClick={timerCtx.isRunning ? timerCtx.stopTimer : timerCtx.startTimer}
       >
-        {timerCtx.isRunning ? "stop" : "start"} timer
+        {timerCtx.isRunning ? "stop" : "start"} timers
       </Button>
     </header>
   );
