@@ -29,6 +29,7 @@ const Timer = ({ name, duration }: TimerProps) => {
       clearInterval(timer);
     };
   }, [isRunning]);
+
   const formattedRemainingTime = (remainingTime / 1000).toFixed(2);
   return (
     <div className="timer bg-green-800 p-4 rounded text-white mx-2 shadow">

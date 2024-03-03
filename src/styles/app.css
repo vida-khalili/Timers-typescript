@@ -5,7 +5,11 @@
 }
 
 #root {
-  background: linear-gradient(#8b9290, #c1d4d2);
+  /* background: linear-gradient(#8b9290, #c1d4d2); */
+  background-image: url("bg1.jpg");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 32px;
 }
 .timer {
