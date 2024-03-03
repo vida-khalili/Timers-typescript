@@ -1,3 +1,27 @@
-.bg-teal-800 {
-  background-color: teal;
+:root {
+  --green-200: #a6e9d5;
+  --green-800: #28454c;
+  --green-700: #2b798e;
+}
+
+#root {
+  background: linear-gradient(#8b9290, #c1d4d2);
+  padding: 32px;
+}
+
+.bg-green-200 {
+  background-color: var(--green-200);
+}
+.bg-green-800 {
+  background-color: var(--green-800);
+}
+
+.btn-green {
+  background-color: var(--green-700);
+  color: white;
+}
+
+.btn-green:hover {
+  background-color: var(--green-200);
+  color: black;
 }

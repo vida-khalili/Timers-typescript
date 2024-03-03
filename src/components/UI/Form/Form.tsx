@@ -35,7 +35,7 @@ const Form = forwardRef<FormHandle, FormProps>(
         onSubmit={handleSubmit}
         {...otherProps}
         ref={form}
-        className="mw-75"
+        className="w-25 mx-auto"
       >
         {children}
       </form>

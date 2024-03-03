@@ -11,11 +11,13 @@ const AddTimer = () => {
     customForm.current?.clear();
   };
   return (
-    <Form onSave={handleSave} ref={customForm}>
-      <Input id="name" label="name" type="name" />
-      <Input id="duration" label="duration" type="number" />
-      <Button>Save</Button>
-    </Form>
+    <div className="p-4">
+      <Form onSave={handleSave} ref={customForm}>
+        <Input id="name" label="name" type="name" />
+        <Input id="duration" label="duration" type="number" />
+        <Button className="btn btn-green w-100 mt-3">Save</Button>
+      </Form>
+    </div>
   );
 };
 
