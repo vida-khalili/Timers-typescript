@@ -32,7 +32,7 @@ const Timer = ({ name, duration }: TimerProps) => {
 
   const formattedRemainingTime = (remainingTime / 1000).toFixed(2);
   return (
-    <div className="timer bg-green-800 p-4 rounded text-white mx-2 shadow">
+    <div className="timer bg-green-800 p-4 rounded text-white  shadow">
       <p className="timer-title text-capitalize text-center">{name}</p>
       <progress max={duration * 1000} value={remainingTime} />
       <p className="text-center">{formattedRemainingTime}</p>

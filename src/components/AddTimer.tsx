@@ -13,7 +13,7 @@ const AddTimer = () => {
     customForm.current?.clear();
   };
   return (
-    <div className="p-4 w-50 bg-green-800 rounded p-3 mx-auto my-4 shadow">
+    <div className="p-4  w-lg-50 w-100  bg-green-800 rounded p-3 mx-auto my-4 shadow">
       <Form onSave={handleSave} ref={customForm}>
         <Input id="name" label="name" type="name" />
         <Input id="duration" label="duration" type="number" />

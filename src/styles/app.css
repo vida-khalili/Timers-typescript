@@ -6,7 +6,7 @@
 
 #root {
   /* background: linear-gradient(#8b9290, #c1d4d2); */
-  background-image: url("/public/bg1.jpg");
+  background-image: url("/bg1.jpg");
   background-color: #cccccc;
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,4 +30,53 @@
 .btn-green:hover {
   background-color: var(--green-200);
   color: black;
+}
+
+/* BREAKPOINTS */
+
+/* SM breakpoint */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 24px !important;
+  }
+}
+@media (min-width: 576px) {
+  /* CUSTOM WIDTHS */
+  .w-sm-100 {
+    width: 100% !important;
+  }
+  .w-sm-50 {
+    width: 50% !important;
+  }
+  .w-sm-75 {
+    width: 75% !important;
+  }
+}
+
+/* MD breakpoint*/
+@media (min-width: 768px) {
+  /* CUSTOM WIDTHS */
+  .w-md-100 {
+    width: 100% !important;
+  }
+  .w-md-50 {
+    width: 50% !important;
+  }
+  .w-md-75 {
+    width: 75% !important;
+  }
+}
+
+/* LG breakpoint */
+@media (min-width: 992px) {
+  /* CUSTOM WIDTHS */
+  .w-lg-100 {
+    width: 100% !important;
+  }
+  .w-lg-50 {
+    width: 50% !important;
+  }
+  .w-lg-75 {
+    width: 75% !important;
+  }
 }
