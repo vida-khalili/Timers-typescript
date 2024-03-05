@@ -5,7 +5,7 @@ const Header = () => {
   const timerCtx = useTimerContext();
 
   return (
-    <header className="d-flex w-100 justify-content-around align-items-center text-white ">
+    <header className="header d-flex w-75 justify-content-around align-items-center text-white mx-auto ">
       <h1 className="text-bold">React Timers</h1>
       <Button
         className="btn btn-green text-capitalize text-white"

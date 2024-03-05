@@ -12,6 +12,7 @@
   background-size: cover;
   padding: 32px;
 }
+
 .timer {
   width: 200px;
 }
@@ -38,6 +39,13 @@
 @media (max-width: 576px) {
   h1 {
     font-size: 24px !important;
+  }
+  .app {
+    width: 100% !important;
+  }
+  .header {
+    width: 100% !important;
+    justify-content: space-between !important;
   }
 }
 @media (min-width: 576px) {
